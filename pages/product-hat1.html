@@ -1,0 +1,415 @@
+<html>
+
+<head>
+
+    <head lang="en">
+        <link rel="shortcut icon" href="images/icon.png">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- for google -->
+        <meta name="description" content="Joux Co Artwork is one of the top artists in the Los Angeles area.">
+        <!-- author -->
+        <meta name="author" content="Joux Co.">
+        <!-- for key words -->
+        <meta name="keywords"
+            content="artwork, artists, graphics, mural, murals, paintings, paint, design, designer, merch, merchandise">
+
+        <meta property="og:title" content="Joux Co.">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="Joux Co. Artwork">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Artwork/Murals/Merch">
+        <meta property="og:image" content="images/fb-og.png">
+        <link rel="icon" type="image/png" href="../images/icon.png">
+        <link rel="stylesheet" type="text/css" href="../styles3.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Joux Co. Artwork</title>
+        <style>
+            .column1 img:hover,
+            .column2 img:hover {
+                transform: none;
+            }
+        </style>
+    </head>
+
+<body style="display: flex; flex-direction: column; background: #EAEAEA;">
+    <nav class="mobileHide">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img class="light" src="../images/navLogo.png" alt="nav logo">
+                <img class="dark" src="../images/navLogodark.png" alt="nav logo dark">
+            </a>
+        </div>
+        </div>
+        <div class="nav-links">
+            <a id="link1" alt="projects link" href="frogs.html">PROJECTS</a>&nbsp;
+            <a alt="gallery and shop link" href="gallery.html">GALLERY & SHOP</a>&nbsp;
+            <a alt="about me link" href="about.html">ABOUT ME</a>&nbsp;
+            <a alt="contact page link" href="about.html#contact">LET'S TALK</a>
+        </div>
+        <div class="icons">
+            <div class="dropdown">
+                <img onclick="myFunction()" class="dropbtn" id="searchicon" src="../images/search.png" alt="search">
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="contract.html">Contracts</a>
+                    <a href="murals.html">Murals</a>
+                    <a href="clothing.html">Merch</a>
+                    <a href="prints.html">Prints</a>
+                    <a href="clothing.html#hats">Hats</a>
+                    <a href="clothing.html#shirts">Shirts</a>
+                    <a href="frogs.html">Projects</a>
+                </div>
+            </div>
+            <a alt="shopping cart" href="cart.html">
+                <img id="cart" src="../images/cart.png" alt="shopping bag">
+            </a>
+        </div>
+    </nav>
+
+    <div class="mobile-nav mobileShow">
+        <div style="display:flex; flex: 1;">
+            <div class="logo-container">
+                <a href="../index.html">
+                    <img class="light" src="../images/navLogo.png" alt="nav logo">
+                    <img class="dark" src="../images/navLogodark.png" alt="nav logo dark">
+                </a>
+            </div>
+            <div class="icon">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+            <div class="icons" style="display: flex; flex:1;">
+                <div class="dropdown">
+                    <img onclick="myFunction2()" class="dropbtn" id="searchicon" src="../images/search.png"
+                        alt="search">
+                    <div id="myDropdown2" class="dropdown-content">
+                        <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction()">
+                        <a href="contract.html">Contracts</a>
+                        <a href="murals.html">Murals</a>
+                        <a href="clothing.html">Merch</a>
+                        <a href="prints.html">Prints</a>
+                        <a href="clothing.html#hats">Hats</a>
+                        <a href="clothing.html#shirts">Shirts</a>
+                        <a href="frogs.html">Projects</a>
+                    </div>
+                </div>
+                <a alt="shopping cart" href="cart.html">
+                    <img id="cart" src="../images/cart.png" alt="shopping bag">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="link1" alt="projects link" href="frogs.html">PROJECTS</a>&nbsp;
+        <a alt="gallery and shop link" href="gallery.html">GALLERY & SHOP</a>&nbsp;
+        <a alt="about me link" href="about.html">ABOUT ME</a>&nbsp;
+        <a alt="contact page link" href="about.html#contact.html">LET'S TALK</a>
+    </div>
+    <div class="shop-nav mobileHide">
+        <div id="shop-btn">
+            <a id="shop-btn" href="gallery.html">
+                <span>SHOP</span>
+            </a>
+        </div>
+        <div class="shop-links">
+            <div class="dropdown">
+                <a onclick="myFunction3()" class="dropbtn">ALL<i
+                        style="position: relative; left: 2; top: 2; font-size:22px"
+                        class="arrow-icon fa fa-caret-down"></i></a>
+                <div style="min-width: 100px; top: 29; left: -34;" id="myDropdown3" class="dropdown-content">
+                    <a style="justify-content: center; color: #fff;" href=" customart.html">Paintings</a>
+                    <a style="justify-content: center; color: #fff;" href="clothing.html#hats">Hats</a>
+                    <a style="justify-content: center; color: #fff;" href="clothing.html#bandanas">Bandanas</a>
+                    <a style="justify-content: center; color: #fff;" href="clothing.html#blankets">Blankets</a>
+                    <a style="justify-content: center; color: #fff;" href="pins.html">Pins</a>
+                </div>
+            </div>
+            <a href="prints.html">PRINTS</a>
+            <a href="graphics.html">GRAPHICS</a>
+            <a href="murals.html">MURALS</a>
+            <a href="clothing.html">CLOTHING</a>
+        </div>
+    </div>
+    <div class="topnav mobileShow">
+        <a href="javascript:void(0);" class="icon" onclick="shopNav()">
+            <i class="fa fa-bars"></i> &nbsp;
+        </a>
+        <div id="myLinks">
+            <a href=" customart.html">Paintings</a>
+            <a href="prints.html">PRINTS</a>
+            <a href="graphics.html">GRAPHICS</a>
+            <a href="murals.html">MURALS</a>
+            <a href="clothing.html">CLOTHING</a>
+        </div>
+        <a id="shop-b" href="#home" class="active2">&nbsp; Shop</a>
+    </div>
+
+
+    <!-- DESKTOP/TABLET VIEW -->
+    <div class="product-container m-none">
+        <div class="product-banner">
+            <p class="product-header">
+                "Carlubis" Canvas Print
+            </p>
+        </div>
+        <div class="inner-container">
+            <div class="inner-col">
+                <div class="mySlides">
+                    <img src="../images/gry-hat.jpg" alt="carlubis print" style="width:100%">
+                </div>
+            </div>
+            <div style="padding-top: 3%" class="inner-col2">
+                <span style="padding-left: 5%; font-weight: bold; margin-top: 4%;">Gray and Black Joux Snap Back Hat w/
+                    Green Logo</span>
+                <hr style="width: 90%; height: 3.5px; background: #707070;">
+                </hr>
+                <span style="padding-left: 5%;">Custom Joux Hat <br><br> This snapback hat is equipped with a colorful
+                    Joux logo that stands out from it's darker gray and black base.
+                </span>
+                <ul>
+                    <li><b>Hat Size:</b> Adjustable Snap Back</li>
+                    <br>
+                    <li><b>Color:</b> Gray/Black/Green</li>
+                    <br>
+                    <li><b>Characteristics:</b> High quality snapback hat made professionally with care to last, and
+                        impress.
+                    </li>
+                </ul>
+                <br>
+                <span style="padding-left: 5%;">-Joux Co Custom Designs-</span>
+                <hr style="width: 90%; height: 3.5px; background: #707070;">
+                <span style="padding-left: 5%;">Joux Co Snapback Gry/Blk/Grn - <br><b>$30.00</b></span>
+                <button
+                    style="margin-top: 4%; cursor: pointer; margin-left: 5%; font-size: 90%;  padding: 10px 0px; width: 35%; border: 0px; color: #fff; background:#A9A9A9;">ADD
+                    TO
+                    CART</button><br><br><br>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- MOBILE VIEW -->
+    <div class="phone-show" style="background: #fff;">
+        <div style="padding-top: 22%;" class="container">
+            <div style="width: 100%; background: #1f1f1f;" class="p-text">
+                <p
+                    style="padding-bottom: 10px; padding-top: 10px; margin: 0 0; margin-left: 6%; color: #fff; text-align: left;">
+                    <b style=" font-size: 120%;">"CARLUBIS"</b><br>CANVAS PRINT</p>
+            </div>
+
+            <div class="mySlides1 display-img">
+                <img style="width:100%" src="../images/cl-p1.png" alt="slide1">
+            </div>
+            <div class="mySlides1">
+                <img style="width:100%" src="../images/cl-p2.png">
+            </div>
+            <div class="mySlides1">
+                <img style="width:100%" src="../images/cl-p4.png">
+            </div>
+            <div class="row" style="display:flex; justify-content: space-around;">
+                <div class="column">
+                    <img class="demo cursor" src="../images/cl-p1.png" style="margin-left: 10%; width:120%"
+                        onclick="currentSlide1(1)" alt="peace and love slide1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../images/cl-p2.png" style="margin-left: 5%; width:120%"
+                        onclick="currentSlide1(2)" alt="peace and love slide2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../images/cl-p4.png" style="width:120%" onclick="currentSlide1(3)"
+                        alt="peace and love slide3">
+                </div>
+            </div>
+            <span class="gray-bold">High Resolution Print on Canvas 16x16</span>
+            <hr style="width: 95%; height: 1px; background: #707070;">
+            <span class="gray">Limited edition print.</span> <br>
+            <p class="gray">The artwork is a classic 'JOUX' style with a mix of unique color choices. Originally a
+                massive
+                wall mural, this piece can now be hung in your home on one of our high defintion canvas prints.</span>
+                <ul style="color: #707070">
+                    <li><b>Artwork Size:</b> 16x16in</li>
+                    <br>
+                    <li><b>Type:</b> Canvas Print</li>
+                    <br>
+                    <li><b>Characteristics:</b> Spray painted mural printed with high resolution on quality 16x16in
+                        canvas made to
+                        hang in your home. For any custom size requests please contact us <a
+                            style="font-weight: bold; color: #707070;" target="_blank"
+                            href="../pages/about.html#contact">here</a>.
+                    </li>
+                </ul>
+                <span class="gray-bold">All prints come with a certificate of authenticity.</span>
+                <hr style="width: 95%; height: 1px; background: #707070;">
+                <span class="gray">Limited Edition Canvas Print - <br></span>
+                <span class="gray"><b>$85.00</b></span><br>
+                <button
+                    style="margin-top: 4%; cursor: pointer; margin-left: 30%; font-size: 100%;  padding: 10px 2px; width: 35%; border: 0px; color: #fff; background:#A9A9A9;">ADD
+                    TO
+                    CART</button><br><br>
+        </div>
+    </div>
+
+    <footer style="margin-top: 4%;">
+        <div class="column-container">
+            <div id="footer1" class="footer-column">
+                <a href="frogs.html">Projects</a>
+                <a href="gallery.html">Gallery & Shop</a>
+                <a href="about.html">About Me</a>
+                <a href="contact.html">Let's Talk</a>
+            </div>
+            <div id="footer2" class="footer-column">
+                <a href="installments.html">Art Installments</a>
+                <a href="canvas-art.html">Canvas Art</a>
+                <a href="clothing.html">Clothing</a>
+                <a href="prints.html">High Res Prints</a>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img src="../images/navLogodark.png" alt="joux logo">
+        </div>
+    </footer>
+</body>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function myFunction3() {
+        document.getElementById("myDropdown3").classList.toggle("show");
+    }
+
+    function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+            } else {
+                a[i].style.display = "none";
+            }
+        }
+    }
+
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+    function filterFunction2() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput2");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown2");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+            txtValue = a[i].textContent || a[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a[i].style.display = "";
+            } else {
+                a[i].style.display = "none";
+            }
+        }
+    }
+
+    function shopNav() {
+        var y = document.getElementById("shop-b");
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block"
+        } else {
+            x.style.display = "block";
+            y.style.display = "none"
+        }
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+
+    var slideIndex = 1;
+    showSlides1(slideIndex);
+
+    // Next/previous controls
+    function plusSlides1(n) {
+        showSlides1(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide1(n) {
+        showSlides1(slideIndex = n);
+    }
+
+    function showSlides1(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides1");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+</script>
+
+</html>
