@@ -31,6 +31,17 @@
       .column2 img:hover {
         transform: none;
       }
+
+      .move-this {
+        height: 450px;
+      }
+
+      @media only screen and (max-width: 851px) and (orientation: landscape) {
+        .move-this {
+          padding-bottom: 70%;
+        }
+
+      }
     </style>
   </head>
 
@@ -54,7 +65,6 @@
         <img onclick="myFunction()" class="dropbtn" id="searchicon" src="../images/search.png" alt="search">
         <div id="myDropdown" class="dropdown-content">
           <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-          <a href="contract.html">Contracts</a>
           <a href="murals.html">Murals</a>
           <a href="clothing.html">Merch</a>
           <a href="prints.html">Prints</a>
@@ -85,7 +95,6 @@
           <img onclick="myFunction2()" class="dropbtn" id="searchicon" src="../images/search.png" alt="search">
           <div id="myDropdown2" class="dropdown-content">
             <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction()">
-            <a href="contract.html">Contracts</a>
             <a href="murals.html">Murals</a>
             <a href="clothing.html">Merch</a>
             <a href="prints.html">Prints</a>
@@ -222,34 +231,35 @@
 
   <!-- MOBILE VIEW -->
   <div class="phone-show phoneShow" style="flex-direction: column; background: #fff;">
-    <div style="padding-top: 22%;" class="container">
+    <div style="padding-top: 20%;" class="container">
       <div style="width: 100%; background: #1f1f1f;" class="p-text">
         <p
           style="padding-bottom: 10px; padding-top: 10px; margin: 0 0; margin-left: 6%; color: #fff; text-align: left;">
           <b style=" font-size: 120%;">"CARLUBIS"</b><br>CANVAS PRINT</p>
       </div>
-
-      <div class="mySlides1 display-img">
-        <img style="width:100%" src="../images/cl-p1.png" alt="slide1">
-      </div>
-      <div class="mySlides1">
-        <img style="width:100%" src="../images/cl-p2.png">
-      </div>
-      <div class="mySlides1">
-        <img style="width:100%" src="../images/cl-p4.png">
-      </div>
-      <div class="row" style="display:flex; justify-content: space-around;">
-        <div class="column">
-          <img class="demo cursor" src="../images/cl-p1.png" style="margin-left: 10%; width:120%"
-            onclick="currentSlide1(1)" alt="peace and love slide1">
+      <div class="move-this">
+        <div class=" mySlides1 display-img">
+          <img class="m-height" style="width:100%" src="../images/cl-p1.png" alt="slide1">
         </div>
-        <div class="column">
-          <img class="demo cursor" src="../images/cl-p2.png" style="margin-left: 5%; width:120%"
-            onclick="currentSlide1(2)" alt="peace and love slide2">
+        <div class="mySlides1">
+          <img class="m-height" style="width:100%" src="../images/cl-p2.png">
         </div>
-        <div class="column">
-          <img class="demo cursor" src="../images/cl-p4.png" style="width:120%" onclick="currentSlide1(3)"
-            alt="peace and love slide3">
+        <div class="mySlides1">
+          <img class="m-height" style="width:100%" src="../images/cl-p4.png">
+        </div>
+        <div class="row" style="display:flex; justify-content: space-around;">
+          <div class="column">
+            <img class="demo cursor" src="../images/cl-p1.png" style="margin-left: 10%; width:120%"
+              onclick="currentSlide1(1)" alt="peace and love slide1">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../images/cl-p2.png" style="margin-left: 5%; width:120%"
+              onclick="currentSlide1(2)" alt="peace and love slide2">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../images/cl-p4.png" style="width:120%" onclick="currentSlide1(3)"
+              alt="peace and love slide3">
+          </div>
         </div>
       </div>
       <span class="gray-bold">High Resolution Print on Canvas 16x16</span>
@@ -262,7 +272,8 @@
           <br>
           <li><b>Type:</b> Canvas Print</li>
           <br>
-          <li><b>Characteristics:</b> Spray painted mural printed with high resolution on quality 16x16in canvas made to
+          <li><b>Characteristics:</b> Spray painted mural printed with high resolution on quality 16x16in canvas made
+            to
             hang in your home. For any custom size requests please contact us <a
               style="font-weight: bold; color: #707070;" target="_blank" href="../pages/about.html#contact">here</a>.
           </li>
@@ -282,13 +293,13 @@
     <div class="column-container">
       <div id="footer1" class="footer-column">
         <a href="frogs.html">Projects</a>
-        <a href="shop.html">Gallery & Shop</a>
+        <a href="gallery.html">Gallery & Shop</a>
         <a href="about.html">About Me</a>
         <a href="about.html#contact">Let's Talk</a>
       </div>
       <div id="footer2" class="footer-column">
-        <a href="installments.html">Art Installments</a>
-        <a href="canvas-art.html">Canvas Art</a>
+        <a href="vision.html">Our Vision</a>
+        <a href="customart.html">Canvas Art</a>
         <a href="clothing.html">Clothing</a>
         <a href="prints.html">High Res Prints</a>
       </div>
@@ -302,12 +313,12 @@
     <div class="column-container">
       <div id="footer1" class="footer-column">
         <a href="frogs.html">Projects</a>
-        <a href="shop.html">Gallery & Shop</a>
+        <a href="gallery.html">Gallery & Shop</a>
         <a href="about.html">About Me</a>
         <a href="about.html#contact2">Let's Talk</a>
       </div>
       <div id="footer2" class="footer-column">
-        <a href="installments.html">Art Installments</a>
+        <a href="vision.html">Our Vision</a>
         <a href="canvas-art.html">Canvas Art</a>
         <a href="clothing.html">Clothing</a>
         <a href="prints.html">High Res Prints</a>

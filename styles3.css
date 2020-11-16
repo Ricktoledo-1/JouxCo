@@ -1123,6 +1123,10 @@ footer a {
     top: 63 !important;
   }
 
+  .m-height {
+    max-height: 300px !important;
+  }
+
   .phoneShow {
     display: flex;
   }
@@ -1418,6 +1422,7 @@ footer a {
   .phone-show {
     display: flex;
   }
+
 
 }
 
@@ -1770,7 +1775,7 @@ footer a {
   }
 }
 
-@media only screen and (max-device-width: 736px) and (orientation: landscape) {
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
   .product-container {
     display: none;
   }
