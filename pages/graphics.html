@@ -27,6 +27,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>Joux Co. Artwork</title>
+
     </head>
 
 <body>
@@ -49,13 +50,12 @@
                 <img onclick="myFunction()" class="dropbtn" id="searchicon" src="../images/search.png" alt="search">
                 <div id="myDropdown" class="dropdown-content">
                     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                    <a href="#tools">Contracts</a>
-                    <a href="#about">Murals</a>
-                    <a href="#base">Merch</a>
-                    <a href="#blog">Prints</a>
-                    <a href="#contact">Hats</a>
-                    <a href="#custom">Shirts</a>
-                    <a href="#support">Projects</a>
+                    <a href="murals.html">Murals</a>
+                    <a href="clothing.html">Merch</a>
+                    <a href="prints.html">Prints</a>
+                    <a href="clothing.html#hats">Hats</a>
+                    <a href="clothing.html#blankets">Blankets</a>
+                    <a href="frogs.html">Projects</a>
                 </div>
             </div>
             <a alt="shopping cart" href="cart.html">
@@ -81,13 +81,12 @@
                         alt="search">
                     <div id="myDropdown2" class="dropdown-content">
                         <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction()">
-                        <a href="#tools">Contracts</a>
-                        <a href="#about">Murals</a>
-                        <a href="#base">Merch</a>
-                        <a href="#blog">Prints</a>
-                        <a href="#contact">Hats</a>
-                        <a href="#custom">Shirts</a>
-                        <a href="#support">Projects</a>
+                        <a href="murals.html">Murals</a>
+                        <a href="clothing.html">Merch</a>
+                        <a href="prints.html">Prints</a>
+                        <a href="clothing.html#hats">Hats</a>
+                        <a href="clothing.html#blankets">Blankets</a>
+                        <a href="frogs.html">Projects</a>
                     </div>
                 </div>
                 <a alt="shopping cart" href="cart.html">
@@ -104,118 +103,59 @@
         <a alt="about me link" href="about.html">ABOUT ME</a>&nbsp;
         <a alt="contact page link" href="about.html#contact2">LET'S TALK</a>
     </div>
+    <div class="padding"></div>
+    <div class="flex-around m-none">
+        <div style="width: 30%;">
+            <img style="width: 100%;" src="../images/store-banner.jpg" alt="graphic1">
+        </div>
+        <div style="width: 30%;">
+            <img style="width: 100%;" src="../images/graphic2.jpg" alt="graphic2">
+        </div>
+        <div style="width: 30%;">
+            <img style="width: 100%;" src="../images/graphic3.jpg" alt="graphic3">
+        </div>
+    </div>
+    <div class="m-show">
+        <div class="mySlides fade">
+            <img src="../images/store-banner.jpg" style="width:100%">
+        </div>
 
-    <div class="project-container">
-        <div class="p-column">
-            <p>NALA THE GUARDIAN</p>
-            <span style="width: 80%;">
-                This is a piece that I was comissioned to do for a young child's room. They requested that I pain them a
-                powerful snake to help keep them safe, and protect them from monsters.
-                I gave him this snake the name Nala, after the famous snake charmer.
-            </span>
-            <br>
-            <div class="btn-container">
-                <a href="natural.html">
-                    <img src="../images/back.png" alt="back-btn">
-                </a>
-                <a href="carlubis.html">
-                    <img style="position: relative; right: 15%;" src="../images/next.png" alt="back-btn">
-                </a>
-            </div>
+        <div class="mySlides fade">
+            <img src="../images/graphic2.jpg" style="width:100%">
         </div>
-        <div class="p-column2">
-            <div class="p1">
-                <img src="../images/n1.jpg" alt="peace and love cut picture one">
-            </div>
-            <div class="p-text">
-                <p>"Nala The Guardian", Los Angeles CA</p>
-                <span style="line-height: 180%;">
-                    This comission for a children's room is of a powerful snake named Nala, a guardian that will help
-                    protect the child from monsters, and give them sweet and peaceful dreams.
-                </span>
-            </div>
-            <br>
-            <div class="p2">
-                <img style="margin-right: 0.5%;" src="../images/n2.jpg" alt="peace and love cut picture two">
-                <img src="../images/n3.jpg" alt="peace and love cut picture three">
-            </div>
-            <span style="line-height: 180%; margin: 1% 0; width: 90%;">
-                The rainbow rainbow portals included in this piece were added to represent the colorful abudance of
-                possibilities for this wonderful child's future, an the name Nala was chosen after the famous snake
-                charmer of the same name.
-            </span>
-            <div class="p1">
-                <img src="../images/n4.jpg" alt="peace and love cut picture four">
-            </div>
-            <div class="p2">
-                <img style="margin-right: 0.5%;" src="../images/n5.jpg" alt="peace and love cut picture five">
-                <img src="../images/n6.jpg" alt="peace and love cut picture six">
-            </div>
-            <div class="p1">
-                <img src="../images/n7.jpg" alt="peace and love cut picture four">
-            </div>
+
+        <div class="mySlides fade">
+            <img src="../images/graphic3.jpg" style="width:100%">
         </div>
+        <!-- Next and previous buttons -->
+        <img style="position: absolute; top: 20%; left: 0;" src="../images/arrow-left.png" class="prev1 m-show"
+            onclick="plusSlides(-1)"></img>
+        <img style="position: absolute; top: 20%; right: 0;" src=" ../images/arrow-right.png" class="next1 m-show"
+            onclick="plusSlides(1)"></img>
+    </div>
+    <form id="contact" class="special contact-container" action="action_page.php">
+        <p style="width: 200%; font-size: 150%; color: #C4C4C4;">Request Custom Graphic Designs Today:</p>
+        <hr
+            style="background-color: #C4C4C4; color: #C4C4C4; opacity: .5; position: relative; bottom: 20px; width:210%;text-align:left;margin-left:0">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" style="height:200px"></textarea>
+
+        <input id="submit-btn" type="submit" value="Submit">
+
+    </form>
     </div>
 
-    <div class="mobile-container">
-        <div style="padding-top: 10%;" class="container">
-            <div class="p-text">
-                <p
-                    style="padding: 10px 0px; margin: 0 0; margin-left: 6%; color: #646464; font-weight: bold; text-align: center;">
-                    <b style="font-size: 120%;">Nala The Guardian</b><br> Los Angeles CA</p>
-            </div>
+    </div>
 
-            <div class="mySlides">
-                <img style="width:100%" src="../images/mn1.jpg" alt="slide1">
-            </div>
-            <div class="mySlides">
-                <img style="width:100%" src="../images/n2.jpg">
-            </div>
-            <div class="mySlides">
-                <img style="width:100%" src="../images/n3.jpg">
-            </div>
-            <div class="mySlides">
-                <img style="width:100%" src="../images/mn4.jpg">
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="../images/mn1.jpg" style="width:100%" onclick="currentSlide(1)"
-                        alt="peace and love slide1">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/n2.jpg" style="width:100%" onclick="currentSlide(2)"
-                        alt="peace and love slide2">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/n3.jpg" style="width:100%" onclick="currentSlide(3)"
-                        alt="peace and love slide3">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/mn4.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="peace and love slide4">
-                </div>
-            </div>
-        </div>
-        <div style="position: relative; bottom: 0;" class="btn-container">
-            <a href="natural.html">
-                <img style="width: 60%; position:relative; left: 35%;" src="../images/back.png" alt="back-btn">
-            </a>
-            <a href="carlubis.html">
-                <img style="width: 60%; position: relative; left: -3%;" src="../images/next.png" alt="back-btn">
-            </a>
-        </div>
-    </div>
-    <div style="padding-top: 6%; padding-bottom: 6%; text-align: center;" class="phoneShow p-text">
-        <span class="phoneShow" style="position: relative; left: 10; color: #646464; padding: 0 5%; margin: 0;">
-            This comission for a children's room is of a powerful snake named Nala, a guardian that will help
-            protect the child from monsters, and give them sweet and peaceful dreams.
-            The rainbow rainbow portals included in this piece were added to represent the colorful abudance of
-            possibilities for this wonderful child's future, an the name Nala was chosen after the famous snake
-            charmer of the same name.
-        </span>
-    </div>
-    </div>
-    <div style="padding: 1%;"></div>
     <footer class="desktop-footer">
         <div class="column-container">
             <div id="footer1" class="footer-column">
@@ -304,7 +244,6 @@
             }
         }
     }
-
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -337,7 +276,7 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
+        // captionText.innerHTML = dots[slideIndex - 1].alt;
     }
 </script>
 

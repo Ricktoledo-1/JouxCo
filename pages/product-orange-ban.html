@@ -27,11 +27,17 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>Joux Co. Artwork</title>
+        <style>
+            .column1 img:hover,
+            .column2 img:hover {
+                transform: none;
+            }
+        </style>
     </head>
 
-<body>
-    <nav style="position:static" class="mobileHide">
-        <div id="oth-logo" class="logo-container">
+<body style="display: flex; flex-direction: column; background: #EAEAEA;">
+    <nav class="mobileHide">
+        <div class="logo-container">
             <a href="../index.html">
                 <img class="light" src="../images/navLogo.png" alt="nav logo">
                 <img class="dark" src="../images/navLogodark.png" alt="nav logo dark">
@@ -49,13 +55,13 @@
                 <img onclick="myFunction()" class="dropbtn" id="searchicon" src="../images/search.png" alt="search">
                 <div id="myDropdown" class="dropdown-content">
                     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                    <a href="#tools">Contracts</a>
-                    <a href="#about">Murals</a>
-                    <a href="#base">Merch</a>
-                    <a href="#blog">Prints</a>
-                    <a href="#contact">Hats</a>
-                    <a href="#custom">Shirts</a>
-                    <a href="#support">Projects</a>
+                    <a href="contract.html">Contracts</a>
+                    <a href="murals.html">Murals</a>
+                    <a href="clothing.html">Merch</a>
+                    <a href="prints.html">Prints</a>
+                    <a href="clothing.html#hats">Hats</a>
+                    <a href="clothing.html#shirts">Shirts</a>
+                    <a href="frogs.html">Projects</a>
                 </div>
             </div>
             <a alt="shopping cart" href="cart.html">
@@ -81,13 +87,13 @@
                         alt="search">
                     <div id="myDropdown2" class="dropdown-content">
                         <input type="text" placeholder="Search.." id="myInput2" onkeyup="filterFunction()">
-                        <a href="#tools">Contracts</a>
-                        <a href="#about">Murals</a>
-                        <a href="#base">Merch</a>
-                        <a href="#blog">Prints</a>
-                        <a href="#contact">Hats</a>
-                        <a href="#custom">Shirts</a>
-                        <a href="#support">Projects</a>
+                        <a href="contract.html">Contracts</a>
+                        <a href="murals.html">Murals</a>
+                        <a href="clothing.html">Merch</a>
+                        <a href="prints.html">Prints</a>
+                        <a href="clothing.html#hats">Hats</a>
+                        <a href="clothing.html#shirts">Shirts</a>
+                        <a href="frogs.html">Projects</a>
                     </div>
                 </div>
                 <a alt="shopping cart" href="cart.html">
@@ -102,121 +108,132 @@
         <a id="link1" alt="projects link" href="frogs.html">PROJECTS</a>&nbsp;
         <a alt="gallery and shop link" href="gallery.html">GALLERY & SHOP</a>&nbsp;
         <a alt="about me link" href="about.html">ABOUT ME</a>&nbsp;
-        <a alt="contact page link" href="about.html#contact2">LET'S TALK</a>
+        <a alt="contact page link" href="about.html#contact2.html">LET'S TALK</a>
+    </div>
+    <div class="shop-nav mobileHide">
+        <div id="shop-btn">
+            <a id="shop-btn" href="gallery.html">
+                <span>SHOP</span>
+            </a>
+        </div>
+        <div class="shop-links">
+            <div class="dropdown">
+                <a onclick="myFunction3()" class="dropbtn">ALL<i
+                        style="position: relative; left: 2; top: 2; font-size:22px"
+                        class="arrow-icon fa fa-caret-down"></i></a>
+                <div style="min-width: 100px; top: 29; left: -34;" id="myDropdown3" class="dropdown-content">
+                    <a style="justify-content: center; color: #fff;" href=" customart.html">Paintings</a>
+                    <a style="justify-content: center; color: #fff;" href="clothing.html#hats">Hats</a>
+                    <a style="justify-content: center; color: #fff;" href="clothing.html#bandanas">Bandanas</a>
+                    <a style="justify-content: center; color: #fff;" href="clothing.html#blankets">Blankets</a>
+                    <a style="justify-content: center; color: #fff;" href="pins.html">Pins</a>
+                </div>
+            </div>
+            <a href="prints.html">PRINTS</a>
+            <a href="graphics.html">GRAPHICS</a>
+            <a href="murals.html">MURALS</a>
+            <a href="clothing.html">CLOTHING</a>
+        </div>
+    </div>
+    <div class="topnav mobileShow">
+        <a href="javascript:void(0);" class="icon" onclick="shopNav()">
+            <i class="fa fa-bars"></i> &nbsp;
+        </a>
+        <div id="myLinks">
+            <a href=" customart.html">PAINTINGS</a>
+            <a href="prints.html">PRINTS</a>
+            <a href="graphics.html">GRAPHICS</a>
+            <a href="murals.html">MURALS</a>
+            <a href="clothing.html">CLOTHING</a>
+        </div>
+        <a id="shop-b" href="#home" class="active2">&nbsp; Shop</a>
     </div>
 
-    <div class="project-container">
-        <div class="p-column">
-            <p>NALA THE GUARDIAN</p>
-            <span style="width: 80%;">
-                This is a piece that I was comissioned to do for a young child's room. They requested that I pain them a
-                powerful snake to help keep them safe, and protect them from monsters.
-                I gave him this snake the name Nala, after the famous snake charmer.
-            </span>
-            <br>
-            <div class="btn-container">
-                <a href="natural.html">
-                    <img src="../images/back.png" alt="back-btn">
-                </a>
-                <a href="carlubis.html">
-                    <img style="position: relative; right: 15%;" src="../images/next.png" alt="back-btn">
-                </a>
-            </div>
+
+    <!-- DESKTOP/TABLET VIEW -->
+    <div class="product-container m-none">
+        <div class="product-banner">
+            <p class="product-header">
+                "Joux Third Eye" Orange Bandana
+            </p>
         </div>
-        <div class="p-column2">
-            <div class="p1">
-                <img src="../images/n1.jpg" alt="peace and love cut picture one">
+        <div class="inner-container">
+            <div class="inner-col">
+                <div class="mySlides">
+                    <img src="../images/ban-o.jpg" alt="third eye bandana" style="width:100%">
+                </div>
             </div>
-            <div class="p-text">
-                <p>"Nala The Guardian", Los Angeles CA</p>
-                <span style="line-height: 180%;">
-                    This comission for a children's room is of a powerful snake named Nala, a guardian that will help
-                    protect the child from monsters, and give them sweet and peaceful dreams.
+            <div style="padding-top: 3%" class="inner-col2">
+                <span style="padding-left: 5%; font-weight: bold; margin-top: 4%;">Joux Third Eye Custom Bandana</span>
+                <hr style="width: 90%; height: 3.5px; background: #707070;">
+                </hr>
+                <span style="padding-left: 5%;">Joux Orange Bandana <br><br> This trippy bandana can be
+                    used as a face mask/covering, or just to bring together
+                    your look with something unique.
                 </span>
+                <ul>
+                    <li><b>Size:</b> One Size Fits All</li>
+                    <br>
+                    <li><b>Color:</b> Orange</li>
+                    <br>
+                    <li><b>Characteristics:</b> High quality bandana with high definition print.
+                    </li>
+                </ul>
+                <br>
+                <span style="padding-left: 5%;">-Joux Co Custom Designs-</span>
+                <hr style="width: 90%; height: 3.5px; background: #707070;">
+                <span style="padding-left: 5%;">Joux Third Eye (Orange) Bandana - <br><b>$15.00</b></span>
+                <button
+                    style="margin-top: 4%; cursor: pointer; margin-left: 5%; font-size: 90%;  padding: 10px 0px; width: 35%; border: 0px; color: #fff; background:#A9A9A9;">ADD
+                    TO
+                    CART</button><br><br><br>
             </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- MOBILE VIEW -->
+    <div class="phone-show phoneShow" style="flex-direction: column; background: #fff;">
+        <div style="padding-top: 22%;" class="container">
+            <div style="width: 100%; background: #1f1f1f;" class="p-text">
+                <p style="text-align: center; padding-bottom: 10px; padding-top: 10px; margin: 0 0; color: #fff;">
+                    <b style="font-size: 120%;">"JOUX THIRD EYE"</b> ORANGE BANDANA</p>
+            </div>
+
+            <div class="mySlides1 display-img">
+                <img style="width:100%" src="../images/ban-o.jpg" alt="slide1">
+            </div>
+
+        </div>
+        <div class="padding"></div>
+        <span class="gray-bold">Joux Third Eye Custom Bandana</span>
+        <hr style="width: 95%; height: 1px; background: #707070;">
+        <span class="gray">Joux Orange Bandana</span> <br>
+        <p class="gray">This trippy bandana can be used as a face mask/covering, or just to bring together your look
+            with something unique.</span>
+            <ul style="color: #707070">
+                <li><b>Size:</b> One Size Fits All</li>
+                <br>
+                <li><b>Color:</b> Orange
+                </li>
+                <br>
+                <li><b>Characteristics:</b> High quality bandana with high definition print.
+                </li>
+            </ul>
             <br>
-            <div class="p2">
-                <img style="margin-right: 0.5%;" src="../images/n2.jpg" alt="peace and love cut picture two">
-                <img src="../images/n3.jpg" alt="peace and love cut picture three">
-            </div>
-            <span style="line-height: 180%; margin: 1% 0; width: 90%;">
-                The rainbow rainbow portals included in this piece were added to represent the colorful abudance of
-                possibilities for this wonderful child's future, an the name Nala was chosen after the famous snake
-                charmer of the same name.
-            </span>
-            <div class="p1">
-                <img src="../images/n4.jpg" alt="peace and love cut picture four">
-            </div>
-            <div class="p2">
-                <img style="margin-right: 0.5%;" src="../images/n5.jpg" alt="peace and love cut picture five">
-                <img src="../images/n6.jpg" alt="peace and love cut picture six">
-            </div>
-            <div class="p1">
-                <img src="../images/n7.jpg" alt="peace and love cut picture four">
-            </div>
-        </div>
+            <span class="gray-bold">-Joux Co Custom Designs-</span>
+            <hr style="width: 95%; height: 1px; background: #707070;">
+            <span class="gray">Joux Third Eye (Orange) Bandana -<br></span>
+            <span class="gray"><b>$15.00</b></span><br>
+            <button
+                style="margin-top: 4%; cursor: pointer; margin-left: 30%; font-size: 100%;  padding: 10px 2px; width: 35%; border: 0px; color: #fff; background:#A9A9A9;">ADD
+                TO
+                CART</button><br><br>
+    </div>
     </div>
 
-    <div class="mobile-container">
-        <div style="padding-top: 10%;" class="container">
-            <div class="p-text">
-                <p
-                    style="padding: 10px 0px; margin: 0 0; margin-left: 6%; color: #646464; font-weight: bold; text-align: center;">
-                    <b style="font-size: 120%;">Nala The Guardian</b><br> Los Angeles CA</p>
-            </div>
-
-            <div class="mySlides">
-                <img style="width:100%" src="../images/mn1.jpg" alt="slide1">
-            </div>
-            <div class="mySlides">
-                <img style="width:100%" src="../images/n2.jpg">
-            </div>
-            <div class="mySlides">
-                <img style="width:100%" src="../images/n3.jpg">
-            </div>
-            <div class="mySlides">
-                <img style="width:100%" src="../images/mn4.jpg">
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="../images/mn1.jpg" style="width:100%" onclick="currentSlide(1)"
-                        alt="peace and love slide1">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/n2.jpg" style="width:100%" onclick="currentSlide(2)"
-                        alt="peace and love slide2">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/n3.jpg" style="width:100%" onclick="currentSlide(3)"
-                        alt="peace and love slide3">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="../images/mn4.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="peace and love slide4">
-                </div>
-            </div>
-        </div>
-        <div style="position: relative; bottom: 0;" class="btn-container">
-            <a href="natural.html">
-                <img style="width: 60%; position:relative; left: 35%;" src="../images/back.png" alt="back-btn">
-            </a>
-            <a href="carlubis.html">
-                <img style="width: 60%; position: relative; left: -3%;" src="../images/next.png" alt="back-btn">
-            </a>
-        </div>
-    </div>
-    <div style="padding-top: 6%; padding-bottom: 6%; text-align: center;" class="phoneShow p-text">
-        <span class="phoneShow" style="position: relative; left: 10; color: #646464; padding: 0 5%; margin: 0;">
-            This comission for a children's room is of a powerful snake named Nala, a guardian that will help
-            protect the child from monsters, and give them sweet and peaceful dreams.
-            The rainbow rainbow portals included in this piece were added to represent the colorful abudance of
-            possibilities for this wonderful child's future, an the name Nala was chosen after the famous snake
-            charmer of the same name.
-        </span>
-    </div>
-    </div>
-    <div style="padding: 1%;"></div>
-    <footer class="desktop-footer">
+    <footer style="margin-top: 2%;" class="desktop-footer">
         <div class="column-container">
             <div id="footer1" class="footer-column">
                 <a href="frogs.html">Projects</a>
@@ -269,6 +286,10 @@
         document.getElementById("myDropdown").classList.toggle("show");
     }
 
+    function myFunction3() {
+        document.getElementById("myDropdown3").classList.toggle("show");
+    }
+
     function filterFunction() {
         var input, filter, ul, li, a, i;
         input = document.getElementById("myInput");
@@ -305,6 +326,18 @@
         }
     }
 
+    function shopNav() {
+        var y = document.getElementById("shop-b");
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.display = "block"
+        } else {
+            x.style.display = "block";
+            y.style.display = "none"
+        }
+    }
+
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -336,6 +369,42 @@
             dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+
+    var slideIndex = 1;
+    showSlides1(slideIndex);
+
+    // Next/previous controls
+    function plusSlides1(n) {
+        showSlides1(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide1(n) {
+        showSlides1(slideIndex = n);
+    }
+
+    function showSlides1(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides1");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "flex";
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
     }
