@@ -1,5 +1,32 @@
 @import url("https://use.typekit.net/gpn8sbm.css");
 
+@-moz-document url-prefix() {
+  .shop-nav {
+    top: 65px !important;
+  }
+
+
+  .talk-btn {
+    margin-top: 12%;
+  }
+
+  .gray-bold-center {
+    margin-top: 3%;
+  }
+
+  footer {
+    margin-top: 3%;
+  }
+
+  .logo-container:hover .dark {
+    width: 43%;
+  }
+
+  #all {
+    position: static;
+  }
+}
+
 .mobileShow {
   display: none;
 }
@@ -663,6 +690,7 @@ footer a {
   margin-left: 50px;
 }
 
+
 /* Dropdown Button */
 .dropbtn {
   cursor: pointer;
@@ -695,6 +723,7 @@ footer a {
 #myInput:focus {
   outline: 3px solid #ddd;
 }
+
 
 #myInput2:focus {
   outline: 3px solid #ddd;
